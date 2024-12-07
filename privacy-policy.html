@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dawa.ai</title>
+    <!-- <link rel="icon" type="image/x-icon" href="Assets\img\pills.ico" /> -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo plus.png" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <style>
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .download-link{
+        margin-right: 50px;
+       
+        display: flex; justify-content: flex-end;
+      }
+      .header-section {
+        background: url("./assets/img/VC6.png") no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-section .container {
+        position: relative;
+        z-index: 1;
+      }
+      .header-section .title {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .header-section .subtitle {
+        font-size: 30px;
+      }
+      .content-privacy {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        border-radius: 10px;
+        margin-top: -60px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 2;
+      }
+      .content-privacy ol {
+        counter-reset: list-counter;
+      }
+      .content-privacy ol li {
+        counter-increment: list-counter;
+        /*font-weight: bold;
+          margin-top: 20px;*/
+        margin-bottom: 5px;
+      }
+
+      .content-privacy p,
+      .content-privacy ul {
+        margin-bottom: 15px;
+      }
+      .content-privacy ul {
+        padding-left: 20px;
+      }
+      .content-privacy ul li {
+        list-style-type: disc;
+      }
+      @media (max-width: 768px) {
+        .header-section .title {
+          font-size: 40px;
+        }
+        .header-section .subtitle {
+          font-size: 20px;
+        }
+      }
+    </style>
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SweetAlert CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Our Team Section</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    /> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SX8QJFL5ZT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SX8QJFL5ZT");
+    </script>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo"
+          ><img
+            src="./assets/img/dawa logo-02 1.png"
+            alt=""
+            class="img-fluid w-150 h-100"
+        /></a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="./index.html">Home</a>
+            </li>
+            <!-- <li><a class="nav-link scrollto" href="./index.html">About Us</a></li> -->
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <a class="dropdown-item" href="./index.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./index.html"
+                      >Our Fundamentals</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="./teams.html">Our Team</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <a class="dropdown-item" href="./productdemo.html">Demo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./index.html">Features</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pricing.html">Pricing</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./pricing.html">FAQs</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li>
+            <a class="nav-link scrollto" href="./index.html">Product Demo</a>
+          </li> -->
+            <!-- <li>
+            <a class="nav-link scrollto" href="./index.html">Features</a>
+          </li> -->
+            <!-- <li>
+            <a class="nav-link scrollto" href="./pricing.html">Pricing</a>
+          </li> -->
+            <!-- <li>
+              <a class="nav-link scrollto" href="./example.html">Teams</a>
+            </li> -->
+            <!-- <li><a class="nav-link scrollto" href="./index.html">Book a Demo</a></li> -->
+            <li>
+              <a class="nav-link scrollto" href="./index.html">Contact Us</a>
+            </li>
+
+            <!--                     <li>
+                        <a class="getstarted"
+                            href="https://script.google.com/macros/s/AKfycbzK015k7QWzDT1Soc37jPZtO2hAkVnaGuxDrJcusaumFLLsN3xoQza2wqAWPzAxY0jngg/exec">Become
+                            Patner</a>
+                    </li> -->
+            <li>
+              <a class="getstarted" href="https://test.oabco.in/login"
+                >Sign In</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- ========================================================================================================================== -->
+
+    <main style="margin-top: 60px">
+      <div class="header-section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-8 d-flex flex-column justify-content-center align-items-start ps-4"
+            >
+              <h1 class="title my-3">PRIVACY POLICY</h1>
+              <h2 class="subtitle mb-4">Last Updated: 01/07/2024</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container content-privacy">
+        <ol>
+          <li><h3 style="font-weight: 600">Introduction</h3></li>
+          <p>
+            Oabco Innovations Pvt. Ltd. (“Company”, “we”, “us” or “our”) owns,
+            operates, and manages the website test.oabco.in. Our Site, branded
+            as Dawa.ai, provides an online cloud-based platform for facilitating
+            retail pharmacies in India (“user”, “users”, “you” or “your”) to
+            procure pharmaceutical products, manage inventory including QR code
+            scanning, lot tracking, expiration date tracking, automate purchase
+            orders, and offer a wide array of customer management solutions
+            (“Services”).
+          </p>
+          <p>
+            This Privacy Policy (or “Policy”) explains the information we
+            collect from you (including the nature of Sensitive Personal Data or
+            Information), the purpose, means, and modes of usage of such
+            information, and the sharing of such information and your legal
+            rights thereto. You may withdraw your consent for the collection and
+            use of your information at any time, subject to the terms of this
+            Policy. However, withdrawal of consent may affect our ability to
+            provide you with certain Services. Your decision to withdraw consent
+            will not cease the processing of Personal Information pursuant to
+            your earlier consent, prior to such withdrawal.
+          </p>
+          <p>
+            This Policy does not apply to practices of companies we do not own
+            or control, including other companies you might interact with on or
+            through the Site.
+          </p>
+          <p>
+            We request you also read the Terms of Service, which sets out the
+            terms governing the Site and the Services.
+          </p>
+          <p>
+            BY USING OUR SITE OR BY OTHERWISE GIVING US YOUR INFORMATION, YOU
+            AGREE TO THE PRACTICES AND POLICIES OUTLINED IN THIS PRIVACY POLICY.
+            YOU CONSENT TO OUR COLLECTION, USE, SHARING, AND DISCLOSURE OF YOUR
+            INFORMATION AS DESCRIBED HEREIN. IF YOU DO NOT AGREE WITH THIS
+            POLICY, DO NOT USE THE SITE OR THE SERVICES OR PROVIDE US WITH ANY
+            INFORMATION. IF YOU USE THE SITE OR SERVICES ON BEHALF OF SOMEONE
+            ELSE OR AN ENTITY, YOU REPRESENT THAT YOU ARE AUTHORIZED TO ACCEPT
+            THIS PRIVACY POLICY ON THEIR BEHALF.
+          </p>
+          <li><h3 style="font-weight: 600;">Information Collected</h3></li>
+          <p>
+            <span style="font-weight: 600">Voluntary Information: </span>We
+            collect personal information that you voluntarily provide when you
+            register on the Site, express interest in our products and Services,
+            participate in activities on the Site, or contact us. This may
+            include your name, password, contact details, location, date of
+            birth, geographical information, Apple ID, gender, PAN card/Aadhaar
+            card/election card/driving licence, GST number, identity cards or
+            registration details issued by relevant authorities, drug licence,
+            pharmacist registration details, photos of your pharmacy store, and
+            any other details relevant to the Services. This information is
+            referred to as “Personal Information”.
+          </p>
+          <p>
+            We may also collect Sensitive Personal Data or Information,
+            including but not limited to: (i) passwords; (ii) financial
+            information (bank account or credit/debit card/virtual wallets/UPI
+            information); (iii) inventory data, sales and purchase data,
+            accounting information (receivables and payables); (iv) health
+            conditions; (v) any information relating to Personal Information
+            provided for procuring the Services; (vi) biometric information.
+            Such information, when combined with other information available to
+            us, can directly or indirectly identify you.
+          </p>
+          <p>
+            All Personal Information provided must be true, complete, and
+            accurate. Any changes must be promptly communicated to us.
+          </p>
+          <p>
+            <span style="font-weight: 600"
+              >Browser and Device Information: </span
+            >We automatically collect certain information when you visit, use,
+            or navigate the Site. This may include IP address, browser and
+            device characteristics, operating system, language preferences,
+            referring URLs, device name, country, location, usage information,
+            and technical information necessary for maintaining security and
+            operation of the Site and for internal analytics and reporting
+            purposes.
+          </p>
+          <p>
+            <span style="font-weight: 600"
+              >Communications and Interactions: </span
+            >We may collect communications and interactions with you, including
+            chats, emails, and feedback/testimonials provided to support tickets
+            or at our request.
+          </p>
+          <p>
+            <span style="font-weight: 600">Inventory Data: </span>We may
+            collect, store, and process inventory data of retail pharmacies to
+            respond to queries regarding the availability of
+            medicines/pharmaceutical products.
+          </p>
+          <li><h3 style="font-weight: 600;">Use of Information</h3></li>
+          <p>We use the collected information to:</p>
+          <ul>
+            <li>
+              Provide, operate, improve, and customize the Site and Services.
+            </li>
+            <li>Process transactions and manage your subscriptions.</li>
+            <li>
+              Send notifications, updates, and other communications related to
+              the Services.
+            </li>
+            <li>Analyze usage and trends to improve user experience.</li>
+            <li>
+              Detect, prevent, and address technical issues and security
+              breaches.
+            </li>
+            <li>Comply with legal obligations.</li>
+          </ul>
+
+          <li><h3 style="font-weight: 600;">Sharing of Information</h3></li>
+          <p>
+            We do not sell, trade, or transfer your Personal Information to
+            third parties without your consent, except as described below:
+          </p>
+          <p>
+            <span style="font-weight: 600">Service Providers: </span>We share
+            information with third-party service providers who perform services
+            on our behalf, such as payment processing (Razorpay), hosting, and
+            data analysis.
+          </p>
+          <p>
+            <span style="font-weight: 600">Legal Requirements: </span>We may
+            disclose information if required by law or in response to valid
+            requests by public authorities.
+          </p>
+          <p>
+            <span style="font-weight: 600">Business Transfers: </span>In the
+            event of a merger, acquisition, or sale of assets, your information
+            may be transferred.
+          </p>
+          <p>
+            <span style="font-weight: 600">Third-Party Analytics: </span>We may
+            share non-personally identifiable information with third-party
+            analytics (e.g., Google Analytics, Firebase Analytics, Zoho
+            Analytics) for internal analytics and improvement of the Services.
+          </p>
+          <p>
+            <span style="font-weight: 600">Manufacturers: </span>We may share
+            aggregated information with manufacturers of pharmaceutical products
+            to help improve healthcare and allied sectors.
+          </p>
+          <li><h3 style="font-weight: 600;">Payment Processing</h3></li>
+          <p>
+            We use Razorpay for processing payments. Razorpay collects and
+            processes your payment information according to their privacy
+            policy. We do not store your payment information. For more
+            information, please review Razorpay’s Privacy Policy here.
+          </p>
+
+          <li><h3 style="font-weight: 600;">Data Security</h3></li>
+          <p>
+            We implement appropriate measures to protect your information from
+            unauthorized access, disclosure, alteration, or destruction.
+            However, no method of transmission over the Internet or electronic
+            storage is completely secure.
+          </p>
+          <li><h3 style="font-weight: 600;">Your Rights</h3></li>
+          <p>
+            Depending on your jurisdiction, you may have the following rights
+            regarding your Personal Information:
+          </p>
+          <ul>
+            <li>The right to access your information.</li>
+            <li>The right to correct inaccurate information.</li>
+            <li>The right to request deletion of your information.</li>
+            <li>The right to restrict or object to processing.</li>
+            <li>The right to data portability.</li>
+          </ul>
+          <p>
+            To exercise these rights, please contact us using the contact
+            details below.
+          </p>
+          <li><h3 style="font-weight: 600;">Changes to This Privacy Policy</h3></li>
+          <p>
+            We may update this Privacy Policy from time to time. We will notify
+            you of any changes by posting the new Privacy Policy on this page.
+            Please review this Privacy Policy periodically for any updates.
+          </p>
+          <!-- <li>Contact Us</li>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+
+        <p>Oabco Innovations Pvt. Ltd. 
+            <br>
+            [Email Address]
+            <br>
+            [Phone Number]
+        </p> -->
+        </ol>
+        <a href="./assets/PDFS/Dawa.ai Privacy Policy v1.pdf" download class="download-link">Download PDF</a>
+      </div>
+      <!-- <div style="background: url(./assets/img/VC6.png)">..</div> -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top mt-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h3>Dawa.ai</h3>
+            </div>
+          </div>
+
+          <div class="row footer-newsletter justify-content-center">
+            <div class="col-lg-6">
+              <form action="" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your Email"
+                /><input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <div class="privacy-tnc-footer">
+            <a href="./privacy-policy.html" >Privacy Policy</a>
+            <a href="./termsandconditions.html" >Terms and Conditions</a>
+            <a href="./refund-policy.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dawa.ai</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by Dawa.ai Web Team</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+      // GSAP animation for header section
+      gsap.from(".header-section", {
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        y: -50,
+      });
+
+      // Add more animations as needed
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- smtp js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- calendly -->
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
+  </body>
+</html>

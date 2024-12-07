@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dawa.ai</title>
+    <!-- <link rel="icon" type="image/x-icon" href="Assets\img\pills.ico" /> -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo plus.png" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <style>
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .download-link{
+        margin-right: 50px;
+       
+        display: flex; justify-content: flex-end;
+      }
+      .header-section {
+        background: url("./assets/img/VC6.png") no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-section .container {
+        position: relative;
+        z-index: 1;
+      }
+      .header-section .title {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .header-section .subtitle {
+        font-size: 30px;
+      }
+      .content-privacy {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        border-radius: 10px;
+        margin-top: -60px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 2;
+      }
+      .content-privacy ol {
+        counter-reset: list-counter;
+      }
+      .content-privacy ol li {
+        counter-increment: list-counter;
+        /*font-weight: bold;
+          margin-top: 20px;*/
+        margin-bottom: 5px;
+      }
+
+      .content-privacy p,
+      .content-privacy ul {
+        margin-bottom: 15px;
+      }
+      .content-privacy ul {
+        padding-left: 20px;
+      }
+      .content-privacy ul li {
+        list-style-type: disc;
+      }
+      @media (max-width: 768px) {
+        .header-section .title {
+          font-size: 40px;
+        }
+        .header-section .subtitle {
+          font-size: 20px;
+        }
+      }
+    </style>
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- SweetAlert CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Our Team Section</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    /> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SX8QJFL5ZT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SX8QJFL5ZT");
+    </script>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo"
+          ><img
+            src="./assets/img/dawa logo-02 1.png"
+            alt=""
+            class="img-fluid w-150 h-100"
+        /></a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="./index.html">Home</a>
+            </li>
+            <!-- <li><a class="nav-link scrollto" href="./index.html">About Us</a></li> -->
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <a class="dropdown-item" href="./index.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./index.html"
+                      >Our Fundamentals</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="./teams.html">Our Team</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <a class="dropdown-item" href="./productdemo.html">Demo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./index.html">Features</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pricing.html">Pricing</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./pricing.html">FAQs</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li>
+            <a class="nav-link scrollto" href="./index.html">Product Demo</a>
+          </li> -->
+            <!-- <li>
+            <a class="nav-link scrollto" href="./index.html">Features</a>
+          </li> -->
+            <!-- <li>
+            <a class="nav-link scrollto" href="./pricing.html">Pricing</a>
+          </li> -->
+            <!-- <li>
+              <a class="nav-link scrollto" href="./example.html">Teams</a>
+            </li> -->
+            <!-- <li><a class="nav-link scrollto" href="./index.html">Book a Demo</a></li> -->
+            <li>
+              <a class="nav-link scrollto" href="./index.html">Contact Us</a>
+            </li>
+
+            <!--                     <li>
+                        <a class="getstarted"
+                            href="https://script.google.com/macros/s/AKfycbzK015k7QWzDT1Soc37jPZtO2hAkVnaGuxDrJcusaumFLLsN3xoQza2wqAWPzAxY0jngg/exec">Become
+                            Patner</a>
+                    </li> -->
+            <li>
+              <a class="getstarted" href="https://test.oabco.in/login"
+                >Sign In</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- ========================================================================================================================== -->
+
+    <main style="margin-top: 60px">
+      <div class="header-section">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-8 d-flex flex-column justify-content-center align-items-start ps-4"
+            >
+              <h1 class="title my-3">Refund Policy
+            </h1>
+              <h2 class="subtitle mb-4">Last Updated: 01/07/2024</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container content-privacy">
+        <ol>
+          <li><h3 style="font-weight: 600">Overview</h3></li>
+          <p>
+            At Oabco Innovations Pvt Ltd, we strive to ensure customer satisfaction with our SaaS ERP
+software for retail pharmacies. We understand that there may be circumstances in which you
+may wish to request a refund. This Refund Policy outlines the terms and conditions under
+which refunds are issued.
+          </p>
+          
+          <li><h3 style="font-weight: 600;">Subscription Refund Eligibility</h3></li>
+          <p>Refunds for our subscription services are subject to the following conditions:
+          </p>
+          <ul>
+            <li><span style="font-weight: 600"
+                >First Month Satisfaction Guarantee: </span
+              >New customers are eligible for a full refund if
+              they cancel their subscription within the first 30 days of service. This is our way of
+              ensuring that our software meets your expectations.
+              </li>
+              <li><span style="font-weight: 600"
+                >Annual Subscription Plans: </span
+              >If you have subscribed to an annual plan and decide to
+              cancel within the first 30 days, you are eligible for a full refund. After the first 30 days,
+              refunds for annual subscriptions will be prorated based on the remaining months of
+              the subscription term.
+              </li>
+              <li><span style="font-weight: 600"
+                >Monthly Subscription Plans: </span
+              >Monthly subscription fees are non-refundable after the
+              first 30 days. If you cancel your monthly subscription, you will not receive a refund for
+              the unused portion of the month.
+              </li>
+          </ul>
+
+
+
+          <li><h3 style="font-weight: 600;">How to Request a Refund</h3></li>
+          <p>To request a refund, please follow these steps:</p>
+          <ul>
+            <li>
+                Contact our Customer Support team at kushal@dawaai.co.in or call +91 77700
+                71144.
+            </li>
+            <li>Provide your subscription details, including the account holder’s name, email
+                address, and the reason for requesting the refund.
+                </li>
+            <li>
+                Our Customer Support team will review your request and respond within 5-7
+                business days.
+                
+            </li>
+          </ul>
+
+          <li><h3 style="font-weight: 600;">Refund Processing</h3></li>
+          <ul>
+            <li>
+                Approved refunds will be processed within 10 business days.
+
+            </li>
+            <li>Refunds will be issued to the original method of payment.
+
+                </li>
+            <li>
+                Depending on your bank or payment provider, it may take additional time for the
+refund to be reflected in your account.
+                
+            </li>
+          </ul>
+         
+          <li><h3 style="font-weight: 600;">Non-Refundable Fees</h3></li>
+          <p>
+            The following fees are non-refundable:</p>
+            <ul>
+                <li>
+                    Setup fees or implementation fees incurred at the start of your subscription.
+    
+                </li>
+                <li>Fees for additional services or customizations beyond the standard software
+                    subscription.
+    
+                    </li>
+              </ul>
+            
+
+          
+
+          <li><h3 style="font-weight: 600;">Changes to the Refund Policy
+        </h3></li>
+          <p>
+            We reserve the right to update or modify this Refund Policy at any time. Changes will be
+posted on our website with the effective date of the revised policy.
+          </p>
+          
+          <!-- <li>Contact Us</li>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+
+        <p>Oabco Innovations Pvt. Ltd. 
+            <br>
+            [Email Address]
+            <br>
+            [Phone Number]
+        </p> -->
+
+        <p>Thank you for choosing Oabco Innovations Pvt Ltd for your retail pharmacy software needs.</p>
+        </ol>
+        <a href="./assets/PDFS/Dawa.ai Refund Policy v1.pdf" download class="download-link">Download PDF</a>
+      </div>
+      <!-- <div style="background: url(./assets/img/VC6.png)">..</div> -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top mt-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h3>Dawa.ai</h3>
+            </div>
+          </div>
+
+          <div class="row footer-newsletter justify-content-center">
+            <div class="col-lg-6">
+              <form action="" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your Email"
+                /><input type="submit" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <div class="privacy-tnc-footer">
+            <a href="./privacy-policy.html" >Privacy Policy</a>
+            <a href="./termsandconditions.html" >Terms and Conditions</a>
+            <a href="./refund-policy.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dawa.ai</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">Designed by Dawa.ai Web Team</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+      // GSAP animation for header section
+      gsap.from(".header-section", {
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        y: -50,
+      });
+
+      // Add more animations as needed
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- smtp js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- calendly -->
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
+  </body>
+</html>
